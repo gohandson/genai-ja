@@ -30,15 +30,14 @@
 
 ### [Section 02: net/httpパッケージ](./skeleton/section02)
 
-学ぶこと：コンポジット型（配列、スライス、マップ）、構造体、ユーザ定義型
-
-* STEP01: 11連ガチャの結果を記録しよう
+* STEP01: Hello, net/http
+* STEP02: チャットボットAPI
+* STEP03: JSONで返そう
+* STEP04: html/templateを使おう
 
 ### [Section 03: gRPC (Connect)](./skeleton/section03)
 
-学ぶこと：関数、ポインタ、メソッド
-
-* STEP01: ガチャを行う関数を定義しよう
+* STEP01: Hello, gRPC and Connect
 
 ## ソースコードの取得
 

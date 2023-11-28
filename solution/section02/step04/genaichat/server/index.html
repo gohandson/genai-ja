@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>チャットボット</title>
+	</head>
+	<body>
+		<p>
+		{{range .History}}
+		{{with .User}}あなた：{{.}}<br>{{end}}
+		{{.Bot}}: {{.Reply}}<br>
+		{{end}}
+		</p>
+		<form method="post" action="/bot">
+			<input name="msg" type="text">
+			<input type="submit" value="送信">
+		</form>
+	</body>
+</html>
