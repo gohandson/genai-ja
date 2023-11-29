@@ -51,9 +51,9 @@ $ go install golang.org/x/tools/cmd/gonew@latest
 セクション3のSTEP2のソースコードを取得するには以下のようなコマンドを実行します。
 
 ```
-$ mkdir -p solution3/step02
-$ cd solution3/step02
-$ go new github.com/gohandson/genai-ja/skeleton/solution03/step02/genaichat github.com/yourname/genai
+$ mkdir -p section03/step02
+$ cd section03/step02
+$ go new github.com/gohandson/genai-ja/skeleton/section03/step02/genaichat github.com/yourname/genai
 ```
 
 `gonew`コマンドの詳細な使い方は、[ドキュメント](https://pkg.go.dev/golang.org/x/tools/cmd/gonew)をご覧ください。
