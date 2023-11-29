@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gohandson/genai-ja/solution/section01/step04/genaichat"
+	"github.com/gohandson/genai-ja/skeleton/section01/step04/genaichat"
 )
 
 var (

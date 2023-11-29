@@ -1,4 +1,4 @@
-module github.com/gohandson/genai-ja/solution/section01/step02/genaichat
+module github.com/gohandson/genai-ja/skeleton/section01/step02/genaichat
 
 go 1.21.4
 

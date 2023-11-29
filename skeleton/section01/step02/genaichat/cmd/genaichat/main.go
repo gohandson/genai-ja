@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gohandson/genai-ja/solution/section01/step02/genaichat"
+	"github.com/gohandson/genai-ja/skeleton/section01/step02/genaichat"
 )
 
 func main() {
