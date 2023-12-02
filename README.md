@@ -35,25 +35,20 @@
 * STEP03: JSONで返そう
 * STEP04: html/templateを使おう
 
-### [Section 03: gRPC (Connect)](./skeleton/section03)
-
-* STEP01: Hello, gRPC and Connect
-
 ## ソースコードの取得
 
 まず、事前に`gonew`コマンドをインストールしておきます。
-
 
 ```bash
 $ go install golang.org/x/tools/cmd/gonew@latest
 ```
 
-セクション3のSTEP2のソースコードを取得するには以下のようなコマンドを実行します。
+セクション1のSTEP01のソースコードを取得するには以下のようなコマンドを実行します。
 
 ```
-$ mkdir -p section03/step02
-$ cd section03/step02
-$ gonew github.com/gohandson/genai-ja/skeleton/section03/step02/genaichat github.com/yourname/genai
+$ mkdir -p section01/step01
+$ cd section01/step01
+$ gonew github.com/gohandson/genai-ja/skeleton/section03/step02/genaichat example.com/genaichat
 ```
 
 `gonew`コマンドの詳細な使い方は、[ドキュメント](https://pkg.go.dev/golang.org/x/tools/cmd/gonew)をご覧ください。

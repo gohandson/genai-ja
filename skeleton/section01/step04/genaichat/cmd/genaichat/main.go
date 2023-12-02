@@ -19,6 +19,8 @@ func init() {
 }
 
 func main() {
+	flag.Parse()
+
 	ctx := context.Background()
 	if err := run(ctx); err != nil {
 		fmt.Fprintln(os.Stderr, err)
