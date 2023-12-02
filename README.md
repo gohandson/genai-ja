@@ -43,6 +43,24 @@
 $ go install golang.org/x/tools/cmd/gonew@latest
 ```
 
+インストールされているか`which`コマンドで確かめましょう。
+Windowsの場合は、`where`コマンドを使ってください。
+
+```bash
+$ which gonew
+```
+
+`gonew`コマンドのパスが表示されればOKです。
+
+`gonew`コマンドが見つからない場合は、以下のように`PATH`を設定してください。
+`.bashrc`や`.zshrc`などに記載すると良いでしょう。
+
+```bash
+$ export PATH=$PATH:$(go env GOPATH)/bin
+```
+
+`PATH`を設定した場合は、再度`which`コマンドを実行して確認してみましょう。
+
 セクション1のSTEP01のソースコードを取得するには以下のようなコマンドを実行します。
 
 ```
