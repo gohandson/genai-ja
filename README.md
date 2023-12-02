@@ -66,8 +66,13 @@ $ export PATH=$PATH:$(go env GOPATH)/bin
 ```
 $ mkdir -p section01/step01
 $ cd section01/step01
-$ gonew github.com/gohandson/genai-ja/skeleton/section03/step02/genaichat example.com/genaichat
+$ gonew github.com/gohandson/genai-ja/skeleton/section01/step01/genaichat example.com/genaichat
 ```
+
+他のセクションやSTEPのソースコードを取得したい場合は、上記のコマンドの`section01`や`step01`をほしいソースコードのセクションやSTEPに変更して実行してください。
+
+なお、`gonew`コマンドの第2引数は`example.com/genaichat`ではなく`github.com/tenntenn/genaichat`のように、ご自身のGitHubアカウントに変更しても良いですが、最後の`genaichat`の部分は変えないようにお願いします。
+もし変更した場合は、取得したソースコードの`import`宣言を変更する必要がでてきます。
 
 `gonew`コマンドの詳細な使い方は、[ドキュメント](https://pkg.go.dev/golang.org/x/tools/cmd/gonew)をご覧ください。
 
