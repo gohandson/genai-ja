@@ -9,12 +9,12 @@
 ## 動かし方
 
 ```
-$ go build .
+$ go build ./genaichat
 $ ./genaichat
 ```
 
 または
 
 ```
-$ go run .
+$ go run ./genaichat
 ```
