@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	//TODO: embedパッケージを使ってprompt_template.txtの値をpromptTmplFileに入れてください
+	// TODO: embedパッケージを使ってprompt_template.txtの値をpromptTmplFileに入れてください
 	promptTmplFile string
 	promptTmpl     = template.Must(template.New("prompt").Parse(promptTmplFile))
 )
@@ -30,12 +30,12 @@ func NewPrompt(name string) *Prompt {
 }
 
 func (p *Prompt) Write(w io.Writer) error {
-	inst := &Instruction{
-		Name: p.Name,
-	}
 
-	if err := p.Template.Execute(w, inst); err != nil {
+	// TODO: テンプレートにBotの名前を埋め込む
+
+	if err != nil {
 		return fmt.Errorf("(*genaichat.Prompt).Write: %w", err)
 	}
+
 	return nil
 }

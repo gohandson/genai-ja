@@ -13,10 +13,6 @@ var (
 	promptTmpl     = template.Must(template.New("prompt").Parse(promptTmplFile))
 )
 
-type Instruction struct {
-	Name string
-}
-
 type Prompt struct {
 	Name     string
 	Template *template.Template
@@ -30,12 +26,11 @@ func NewPrompt(name string) *Prompt {
 }
 
 func (p *Prompt) Write(w io.Writer) error {
-	inst := &Instruction{
-		Name: p.Name,
-	}
 
-	if err := p.Template.Execute(w, inst); err != nil {
+	err := p.Template.Execute(w, p.Name)
+	if err != nil {
 		return fmt.Errorf("(*genaichat.Prompt).Write: %w", err)
 	}
+
 	return nil
 }
